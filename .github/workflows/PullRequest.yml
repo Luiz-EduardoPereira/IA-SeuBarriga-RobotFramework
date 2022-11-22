@@ -8,6 +8,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/checkout@master
+      - name: Create dir
+        run: |
+          mkdir web/global
+        run: |
+          mkdir web/pages
+      - name: copy file
+        uses: canastro/copy-file-action@master
+        with:
+          source: "web/global/GlobalKeywords.robot"
+          target: "web/global"
+          source: "web/pages/Login.robot"
+          target: "web/pages/"
+          source: "web/pages/Movimentacao.robot"
+          target: "web/pages/"
     - name: Rodando Testes
       uses: joonvena/robotframework-docker-action@v1.0
       with:
