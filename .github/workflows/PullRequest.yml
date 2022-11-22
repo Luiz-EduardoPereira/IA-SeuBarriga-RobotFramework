@@ -12,8 +12,7 @@ jobs:
      - name: Criado diretório
         run: |
           mkdir -p web/global/
-          mkdir -p web/pages/  
-      - name: Rodando Testes
+     - name: Rodando Testes
     - uses: joonvena/robotframework-docker-action@v1.0
       with:
         robot_tests_dir: web/testes
