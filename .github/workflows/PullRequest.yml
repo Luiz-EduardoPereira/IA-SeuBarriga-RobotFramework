@@ -9,9 +9,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/checkout@master
-     - name: Criado diretório
-        run: |
-          mkdir -p web/global/
      - name: Rodando Testes
     - uses: joonvena/robotframework-docker-action@v1.0
       with:
