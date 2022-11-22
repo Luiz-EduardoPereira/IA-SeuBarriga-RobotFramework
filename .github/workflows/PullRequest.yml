@@ -7,21 +7,12 @@ jobs:
   testes:
     runs-on: ubuntu-latest
     steps:
-     - name: Criado diretório
-        run: |
-          mkdir web/global/
-        run: |
-          mkdir web/pages/
-    - uses: canastro/copy-file-action@master
-        with:
-          source: "web/global/GlobalKeywords.robot"
-          target: "web/global"
-          source: "web/pages/Login.robot"
-          target: "web/pages/"
-          source: "web/pages/Movimentacao.robot"
-          target: "web/pages/"    
     - uses: actions/checkout@v2
     - uses: actions/checkout@master
+     - name: Criado diretório
+        run: |
+          mkdir -p web/global/
+          mkdir -p web/pages/  
       - name: Rodando Testes
     - uses: joonvena/robotframework-docker-action@v1.0
       with:
