@@ -1,0 +1,7 @@
+menu_Criar_Movimentacao = "xpath= //*[@href='/movimentacao']"
+campo_Dt_Movimentacao= "//*[@id='data_transacao']"
+campo_Dt_Pagamento= "//*[@id='data_pagamento']"
+campo_Descricao= "//*[@id='descricao']"
+campo_Interessado= "//*[@id='interessado']"
+campo_Valor= "//*[@id='valor']"
+btn_Salvar= "//*[@type='submit']"
