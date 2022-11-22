@@ -9,11 +9,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/checkout@master
-      - name: Create dir
+      - name: Create diretório
         run: |
-          mkdir web/global
+          mkdir web/global/
         run: |
-          mkdir web/pages
+          mkdir web/pages/
       - name: copy file
         uses: canastro/copy-file-action@master
         with:
