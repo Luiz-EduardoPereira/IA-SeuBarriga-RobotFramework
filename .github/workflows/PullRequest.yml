@@ -14,8 +14,7 @@ jobs:
           mkdir web/global/
         run: |
           mkdir web/pages/
-      - name: copy file
-        uses: canastro/copy-file-action@master
+    - uses: canastro/copy-file-action@master
         with:
           source: "web/global/GlobalKeywords.robot"
           target: "web/global"
