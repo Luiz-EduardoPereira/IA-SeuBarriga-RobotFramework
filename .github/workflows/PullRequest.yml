@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-     - name: Rodando Testes
+    - name: Rodando Testes
     - uses: joonvena/robotframework-docker-action@v1.0
       with:
         robot_tests_dir: web/testes
